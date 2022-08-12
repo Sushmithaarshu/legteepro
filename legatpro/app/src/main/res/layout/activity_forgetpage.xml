@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgetpageActivity"
+    android:background="@drawable/darkbackgoo">
+
+    <TextView
+        android:id="@+id/forgottopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:text="Here you can reset the password"
+        android:textColor="#DFDCD5"
+        android:textSize="35dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/phonnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/loginbackgr"
+        android:drawablePadding="10dp"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:padding="25dp"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="#B0FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgottopic"
+        app:layout_constraintVertical_bias="0.113"
+        tools:layout_editor_absoluteX="34dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/buttonoflogin"
+        android:padding="20dp"
+        android:text="Get OTP"
+        android:textColor="#D2FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonnumber"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="80dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
